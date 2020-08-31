@@ -1,0 +1,12 @@
+<h1> I've done this shit a million times </h1> 
+
+<p>Title: <%= @song.title %> </p>
+<p>Released: <%= @song.released %></p>
+<p>Release year: <%= @song.release_year %></p>
+<p>Artist Name: <%= @song.artist_name %></p>
+<p>Genre: <%= @song.genre %></p>
+
+<%= button_to "back to index", songs_path, method: :get %>
+<%= button_to "delete", song_path(@song), method: :delete %>
+<%= button_to "edit song", edit_song_path(@song), method: :get %>
+
